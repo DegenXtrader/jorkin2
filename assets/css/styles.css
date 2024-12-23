@@ -1065,3 +1065,67 @@ button3 {
 button3:hover {
   background: linear-gradient(45deg, #388E3C, #66BB6A);
 }
+
+/* generator and gallery addons */
+/* Full height and width for the section */
+
+
+/* Full height and width for the section */
+section.generator {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Full viewport height */
+  width: 100%;             /* Full width */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Include padding in dimensions */
+}
+
+/* Center the iframe container */
+.generator__data {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  width: 100%;             /* Full width of the parent */
+  height: auto;            /* Adjust height as needed */
+}
+
+section.gallery {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Full viewport height */
+  width: 100%;             /* Full width */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Include padding in dimensions */
+}
+
+/* Center the iframe container */
+.gallery__data {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  width: 100%;             /* Full width of the parent */
+  height: auto;            /* Adjust height as needed */
+}
+
+/* Style the iframe container */
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Center iframe horizontally */
+  align-items: center;     /* Center iframe vertically */
+  width: 100%;             /* Full container width */
+  max-width: 1200px;       /* Optional: cap the width */
+  height: 80vh;            /* Use 80% of the viewport height */
+  overflow: hidden;        /* Prevent unwanted scrollbars */
+}
+
+/* Style the iframe itself */
+.responsive-iframe {
+  width: 100%;             /* Full width of the container */
+  height: 100%;            /* Full height of the container */
+  border: none;            /* Remove iframe border */
+  overflow-y: auto;        /* Allow vertical scrolling if needed */
+}
