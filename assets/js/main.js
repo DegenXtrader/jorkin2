@@ -99,15 +99,3 @@ sr.reveal(`.about__data, .discount__img`,{origin: 'left'})
 sr.reveal(`.generator__data`,{origin: 'left'})
 sr.reveal(`.gallery__data`,{origin: 'left'})
 sr.reveal(`.about__img, .discount__data`,{origin: 'right'})
-
-/* hack for page reload when clicking on gallery link */
-const galleryLink = document.querySelector('.nav__menu a[href="#gallery"]'); // Select the Gallery link
- 
-if (galleryLink) {
-     galleryLink.addEventListener('click', (e) => {
-         e.preventDefault(); // Prevent default anchor behavior
-         const currentUrl = window.location.href.split('#')[0]; // Remove existing hash
-         window.location.href = `${currentUrl}#gallery`; // Set hash for the gallery
-         window.location.reload(); // Force a reload
-     });
- }
