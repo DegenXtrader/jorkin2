@@ -1129,3 +1129,40 @@ section.gallery {
   border: none;            /* Remove iframe border */
   overflow-y: auto;        /* Allow vertical scrolling if needed */
 }
+
+/* Responsive container for the button and text */
+.responsive-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Add space between the button and text */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px; /* Add spacing between the button and text */
+  max-width: 100%; /* Ensure it fits the parent width */
+  overflow: hidden; /* Prevent overflowing content */
+}
+
+/* Responsive button */
+.responsive-button {
+  padding: 10px 15px;
+  font-size: clamp(12px, 2vw, 16px); /* Responsive font size */
+  white-space: nowrap; /* Prevent text wrapping inside the button */
+  border: none;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.responsive-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive text */
+.responsive-text {
+  font-size: clamp(12px, 2vw, 16px); /* Responsive font size */
+  word-break: break-word; /* Prevent overflow and break long words */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+  overflow: hidden;
+  white-space: nowrap; /* Prevent text wrapping */
+}
